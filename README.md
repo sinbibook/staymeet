@@ -1,1 +1,1 @@
-# staymeet
+# template-full-banner-slider

@@ -1,0 +1,9 @@
+/* CDN Fonts */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.min.css');
+
+/* CSS Variables */
+:root {
+  --font-ko-main: 'Pretendard', sans-serif;
+  --color-primary: #F9FAFB;
+  --color-secondary: #111827;
+}

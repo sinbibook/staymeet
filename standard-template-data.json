@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.5.0",
-    "generatedAt": "2026-01-08T23:57:03.537Z",
+    "version": "1.6.0",
+    "generatedAt": "2026-01-16T02:27:50.154Z",
     "templateType": "full_banner_slider",
     "propertyId": "b7d25e75-be29-4dfb-898e-e58779afd4be",
     "homepageId": "97bf4864-822e-4890-9299-41e72394b2b0"
@@ -299,7 +299,7 @@
     "nameEn": "Gangneung Staymeet Private Pool Villa",
     "domain": "staymeet.kr",
     "realtimeBookingId": "10356",
-    "ybsId": ""
+    "ybsId": "79191"
   },
   "rooms": [
     {
@@ -934,6 +934,7 @@
       "popup": {
         "popups": []
       }
-    }
+    },
+    "id": "97bf4864-822e-4890-9299-41e72394b2b0"
   }
 }

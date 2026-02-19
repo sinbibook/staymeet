@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.11.0",
-    "generatedAt": "2026-01-27T06:38:08.846Z",
+    "version": "1.12.0",
+    "generatedAt": "2026-02-19T07:21:54.805Z",
     "templateType": "full_banner_slider",
     "propertyId": "b7d25e75-be29-4dfb-898e-e58779afd4be",
     "homepageId": "97bf4864-822e-4890-9299-41e72394b2b0"
@@ -45,10 +45,10 @@
       "businessNumber": "626-38-01139",
       "representativeName": "유형철",
       "businessAddress": "강원특별자치도 강릉시 사천면 방동안길65",
-      "businessPhone": "",
-      "businessEmail": "",
-      "businessType": "",
-      "businessCategory": "",
+      "businessPhone": "010-9233-4609",
+      "businessEmail": "choirang0731@naver.com",
+      "businessType": "individual",
+      "businessCategory": "숙박",
       "eCommerceRegistrationNumber": ""
     },
     "contractInfo": {
@@ -315,14 +315,14 @@
     {
       "id": "d8be2ba5-9fe2-47ea-b932-b8954b8e0fec",
       "name": "독채 풀빌라(자쿠지,개별바베큐)",
-      "description": "독채형 : 침대룸A(킹1)+침대룸B(킹1)+온돌룸A(침구류2)+거실+주방+화장실3+자쿠지+실내수영장+테라스",
+      "description": "독채형 : 침대룸A(킹1)+침대룸B(킹1)+거실+주방+화장실3+자쿠지+실내수영장+테라스",
       "roomInfo": "[인원추가(1박기준/현장결제)]\n- 36개월~성인 1인 20,000원\n- 36개월 미만 유아 무료\n- 영유아 인원수 포함 / 최대인원 초과불가",
       "group": null,
       "size": 165,
       "baseOccupancy": 6,
       "maxOccupancy": 10,
       "totalRoomCount": {
-        "bedroom": 3,
+        "bedroom": 2,
         "bathroom": 3,
         "livingRoom": 0
       },
@@ -1357,6 +1357,7 @@
           ]
         }
       ]
-    }
+    },
+    "id": "97bf4864-822e-4890-9299-41e72394b2b0"
   }
 }

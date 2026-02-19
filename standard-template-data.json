@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.16.0",
-    "generatedAt": "2026-02-19T07:29:20.127Z",
+    "version": "1.17.0",
+    "generatedAt": "2026-02-19T07:30:08.791Z",
     "templateType": "full_banner_slider",
     "propertyId": "b7d25e75-be29-4dfb-898e-e58779afd4be",
     "homepageId": "97bf4864-822e-4890-9299-41e72394b2b0"
@@ -332,7 +332,6 @@
       ],
       "amenities": [
         "침대",
-        "온돌",
         "소파베드",
         "테라스",
         "무료 WiFi",

@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "version": "1.17.0",
-    "generatedAt": "2026-02-19T07:30:08.791Z",
+    "version": "1.18.0",
+    "generatedAt": "2026-02-24T00:10:19.160Z",
     "templateType": "full_banner_slider",
     "propertyId": "b7d25e75-be29-4dfb-898e-e58779afd4be",
     "homepageId": "97bf4864-822e-4890-9299-41e72394b2b0"
   },
   "property": {
     "id": "b7d25e75-be29-4dfb-898e-e58779afd4be",
-    "name": "강릉 스테이밋 독채 풀빌라",
+    "name": "강릉 스테이밋 풀빌라",
     "description": "",
-    "subtitle": "강릉 바다의 분위기를 단독으로 누리는 강릉 스테이밋 독채 풀빌라 입니다.",
+    "subtitle": "강릉 바다의 분위기를 단독으로 누리는 강릉 스테이밋 풀빌라 입니다.",
     "address": "강원특별자치도 강릉시 사천면 방동안길 65",
     "latitude": 37.8222469442075,
     "longitude": 128.863041136976,
@@ -70,7 +70,7 @@
       {
         "id": "901d68ef-e3ce-44f4-b375-1838605daacd",
         "name": "개별 바베큐",
-        "description": "개별 공간에서 즐기는 프라이빗 바비큐 타임",
+        "description": "개별 공간에서 즐기는 프라이빗 바베큐 타임",
         "usageGuide": "- 가스웨버그릴: 6인 기준 30,000원(1인 추가 시 5,000원)\n- 이용장소 : 야외 데크(우천 시 및 동절기에도 이용 가능)\n- 이용시간:  15시~22시까지\n- 현장결제",
         "displayOrder": 52,
         "images": [
@@ -306,7 +306,7 @@
         "commonArea": []
       }
     ],
-    "nameEn": "Gangneung Staymeet Private Pool Villa",
+    "nameEn": "Gangneung Staymeet Pool Villa",
     "domain": "staymeet.kr",
     "realtimeBookingId": "https://www.bookingplay.co.kr/booking/1/10356",
     "ybsId": "79191"
@@ -314,9 +314,10 @@
   "rooms": [
     {
       "id": "d8be2ba5-9fe2-47ea-b932-b8954b8e0fec",
-      "name": "독채 풀빌라(자쿠지,개별바베큐)",
-      "description": "독채형 : 침대룸A(킹1)+침대룸B(킹1)+거실+주방+화장실3+자쿠지+실내수영장+테라스",
+      "name": "풀빌라(자쿠지,개별바베큐)",
+      "description": "침대룸A(킹1)+침대룸B(킹1)+거실+주방+화장실3+자쿠지+실내수영장+테라스",
       "roomInfo": "[인원추가(1박기준/현장결제)]\n- 36개월~성인 1인 20,000원\n- 36개월 미만 유아 무료\n- 영유아 인원수 포함 / 최대인원 초과불가",
+      "usageGuide": "",
       "group": null,
       "size": 165,
       "baseOccupancy": 6,
@@ -357,7 +358,6 @@
         "숲전망"
       ],
       "roomStructures": [
-        "독채",
         "테라스",
         "온돌"
       ],
@@ -622,9 +622,9 @@
       }
     ],
     "seo": {
-      "title": "강릉 스테이밋  독채 펜션",
-      "description": "강릉 바다의 분위기를 단독으로 누리는 강릉 스테이밋 독채 풀빌라 입니다.",
-      "keywords": "강릉펜션, 강원도펜션, 강릉독채펜션, 강릉단체펜션, 강릉풀빌라, 강릉풀빌라펜션, 강릉수영장펜션, 강릉독채풀빌라, 강릉독채수영장, 개별바베큐, 촌캉스"
+      "title": "강릉 스테이밋 펜션",
+      "description": "강릉 바다의 분위기를 단독으로 누리는 강릉 스테이밋 풀빌라 입니다.",
+      "keywords": "강릉펜션, 강원도펜션, 강릉단체펜션, 강릉풀빌라, 강릉풀빌라펜션, 강릉수영장펜션, 개별바베큐, 촌캉스"
     },
     "socialLinks": {},
     "customFields": {
@@ -758,7 +758,7 @@
                 "description": "온전히 나만의 휴식을 완성하는 특별한 스테이"
               },
               "closing": {
-                "title": "강릉 스테이밋 독채 풀빌라",
+                "title": "강릉 스테이밋 풀빌라",
                 "images": [
                   {
                     "id": "ff8f2152-0fde-4344-8b74-e115d41feb6b",
@@ -768,12 +768,12 @@
                     "isSelected": true
                   }
                 ],
-                "description": "Gangneung Staymeet Private Pool Villa"
+                "description": "Gangneung Staymeet Pool Villa"
               },
               "essence": {
                 "title": "preview",
                 "images": [],
-                "description": "강릉 스테이밋 독채펜션 미리보기"
+                "description": "강릉 스테이밋 풀빌라 미리보기"
               },
               "gallery": {
                 "title": "",
@@ -801,7 +801,7 @@
                     "id": "1054dccb-4ebc-4f53-9aae-c0fbac853d02",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/97bf4864-822e-4890-9299-41e72394b2b0/index_signature/1767145719552-1oebessn1xei.jpg",
                     "sortOrder": 2,
-                    "description": "나만의 시간을 지켜주는 독채 스테이",
+                    "description": "나만의 시간을 지켜주는 힐링 스테이",
                     "isSelected": true
                   }
                 ],
@@ -869,7 +869,7 @@
                     }
                   ],
                   "blockId": "3dfae55e-86a1-4465-99c1-9ac3f786a429",
-                  "description": "강릉의 바다와 바람이 일상처럼 스며드는 곳, \n강릉 스테이밋 펜션은 번잡한 여행보다 ‘머무는 시간’에 집중한 공간입니다.\n문을 여는 순간부터 외부의 소음은 자연스럽게 멀어지고, 오직 나만의 리듬으로 하루가 흐르기 시작합니다.\n\n프라이빗한 독채 공간은 누구의 시선에도 방해받지 않는 진짜 휴식을 선사하고, \n여유로운 스케일의 풀빌라와 따뜻한 온기를 품은 자쿠지는 하루의 피로를 부드럽게 풀어줍니다. \n물 위로 번지는 빛과 고요한 공기 속에서, 아무것도 하지 않는 시간조차 가장 완벽한 휴식이 됩니다.\n\n강릉 스테이밋은 화려함보다 편안함을, 빠른 여행보다 깊은 쉼을 선택한 이들을 위한 곳입니다.\n머무는 동안만큼은 일상에서 한 걸음 떨어져, 당신만의 속도로 쉬어가길 바랍니다.\n\nFROM. 강릉 스테이밋 프라이빗 풀빌라"
+                  "description": "강릉의 바다와 바람이 일상처럼 스며드는 곳, \n강릉 스테이밋 펜션은 번잡한 여행보다 ‘머무는 시간’에 집중한 공간입니다.\n문을 여는 순간부터 외부의 소음은 자연스럽게 멀어지고, 오직 나만의 리듬으로 하루가 흐르기 시작합니다.\n\n누구의 시선에도 방해받지 않는 진짜 휴식을 선사하고, \n여유로운 스케일의 풀빌라와 따뜻한 온기를 품은 자쿠지는 하루의 피로를 부드럽게 풀어줍니다. \n물 위로 번지는 빛과 고요한 공기 속에서, 아무것도 하지 않는 시간조차 가장 완벽한 휴식이 됩니다.\n\n강릉 스테이밋은 화려함보다 편안함을, 빠른 여행보다 깊은 쉼을 선택한 이들을 위한 곳입니다.\n머무는 동안만큼은 일상에서 한 걸음 떨어져, 당신만의 속도로 쉬어가길 바랍니다.\n\nFROM. 강릉 스테이밋 풀빌라"
                 }
               ]
             }
@@ -881,7 +881,7 @@
             "sections": [
               {
                 "hero": {
-                  "title": "독채형 : 침대룸A(킹1)+침대룸B(킹1)+거실+주방+화장실3+자쿠지+실내수영장+테라스",
+                  "title": "침대룸A(킹1)+침대룸B(킹1)+거실+주방+화장실3+자쿠지+실내수영장+테라스",
                   "images": []
                 },
                 "gallery": {

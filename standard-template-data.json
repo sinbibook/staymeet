@@ -1,14 +1,15 @@
 {
   "metadata": {
-    "version": "1.28.0",
-    "generatedAt": "2026-05-18T05:22:12.654937690Z",
-    "templateType": "full_banner_slider",
+    "version": "1.29.0",
+    "generatedAt": "2026-06-02T07:40:39.469329795Z",
+    "templateType": "full_banner_slider_flat",
     "propertyId": "b7d25e75-be29-4dfb-898e-e58779afd4be",
     "homepageId": "97bf4864-822e-4890-9299-41e72394b2b0"
   },
   "property": {
     "id": "b7d25e75-be29-4dfb-898e-e58779afd4be",
     "name": "강릉 스테이밋 풀빌라",
+    "nameEn": "Gangneung Staymeet Pool Villa",
     "description": "",
     "subtitle": "강릉 바다의 분위기를 단독으로 누리는 강릉 스테이밋 풀빌라 입니다.",
     "address": "강원특별자치도 강릉시 사천면 방동안길 65",
@@ -23,6 +24,9 @@
     "reservationGuide": "미성년자는 보호자 없이 예약 및 입실 불가하며, 위반 시 환불 없이 퇴실됩니다.\n객실 요금은 기준 인원 기준이며, 초과 시 추가 요금이 발생합니다.\n최대 인원 초과 시 입실 불가하며, 이로 인한 환불은 불가입니다. (유아, 어린이 포함)\n현장 추가 요금은 숙소 측에 사전 확인 바랍니다.\n수영장 등 부대시설은 날씨나 상황에 따라 이용이 제한될 수 있으니 사전 확인 바랍니다.\n당일 예약 후 취소 시 환불 불가하며, 늦은 시간 당일 예약 후 즉시 방문 시 입실 불가할 수 있으니 숙소 확인 후 예약해 주세요.\n취소 수수료는 구매처마다 다를 수 있습니다.\n시스템 오류로 인해 정상가와 다른 금액으로 예약이 진행된 경우, 부득이하게 예약이 취소될 수 있습니다.\n전 객실 금연이며, 흡연은 지정된 장소에서만 가능합니다.",
     "province": "강원특별자치도",
     "city": "강릉시",
+    "domain": "staymeet.kr",
+    "realtimeBookingId": "https://map.naver.com/p/entry/place/1179611927",
+    "ybsId": "79191",
     "amenities": [
       "WiFi",
       "수영장",
@@ -328,11 +332,7 @@
         "surrounding": [ ],
         "commonArea": [ ]
       }
-    ],
-    "nameEn": "Gangneung Staymeet Pool Villa",
-    "domain": "staymeet.kr",
-    "realtimeBookingId": "https://map.naver.com/p/entry/place/1179611927",
-    "ybsId": "79191"
+    ]
   },
   "rooms": [
     {
@@ -685,8 +685,9 @@
     }
   ],
   "homepage": {
+    "id": "97bf4864-822e-4890-9299-41e72394b2b0",
     "domain": "staymeet.kr",
-    "templateType": "full_banner_slider",
+    "templateType": "full_banner_slider_flat",
     "images": [
       {
         "logo": [ ]
@@ -827,16 +828,74 @@
                 "videos": [ ]
               },
               "essence": {
-                "title": "preview",
-                "images": [ ],
-                "description": "강릉 스테이밋 풀빌라 미리보기",
-                "videos": [ ]
+                "title": "고급스러운 감성과 세련된 공간이 어우러진 강릉 스테이밋 풀빌라 단독 독채로 운영되어 더욱 프라이빗하고 여유로운 휴식을 즐길 수 있습니다. 일상에서 벗어나 오롯이 머무름에 집중하는 특별한 스테이를 경험해보세요. ✨",
+                "images": [
+                  {
+                    "id": "1de48c44-ed1d-47a4-a71f-895b37ae2660",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/97bf4864-822e-4890-9299-41e72394b2b0/index_essence/1780385820340-pvhct68c5e.jpeg",
+                    "sortOrder": 0,
+                    "description": "",
+                    "isSelected": true,
+                    "blockId": null
+                  },
+                  {
+                    "id": "09555d85-abe9-41a2-b2e6-d17698797a25",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/97bf4864-822e-4890-9299-41e72394b2b0/index_essence/1780385820352-e87dbnv397.jpg",
+                    "sortOrder": 1,
+                    "description": "",
+                    "isSelected": true,
+                    "blockId": null
+                  }
+                ],
+                "videos": [ ],
+                "description": "Your Own Private Escape, Staymeet PoolVilla"
               },
               "gallery": {
-                "title": "",
-                "images": [ ],
-                "description": "",
-                "videos": [ ]
+                "title": "Preview",
+                "images": [
+                  {
+                    "id": "97804ac6-85e0-4b2a-bac3-884776f21691",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/97bf4864-822e-4890-9299-41e72394b2b0/index_gallery/1780385820350-uwfkzaanb7.jpg",
+                    "sortOrder": 0,
+                    "description": "풀빌라",
+                    "isSelected": true,
+                    "blockId": null
+                  },
+                  {
+                    "id": "1ec1cd20-3106-49ab-b9cf-084336f76909",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/97bf4864-822e-4890-9299-41e72394b2b0/index_gallery/1780385820343-0rri8ujp78.jpeg",
+                    "sortOrder": 1,
+                    "description": "바베큐",
+                    "isSelected": true,
+                    "blockId": null
+                  },
+                  {
+                    "id": "d805b07e-33ac-4fa2-8064-5f0ce3ec092d",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/97bf4864-822e-4890-9299-41e72394b2b0/index_gallery/1780385820349-b9epuuq4se.jpeg",
+                    "sortOrder": 2,
+                    "description": "침실",
+                    "isSelected": true,
+                    "blockId": null
+                  },
+                  {
+                    "id": "f00a4e2b-3b53-4e17-8b10-26bb3f2b345b",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/97bf4864-822e-4890-9299-41e72394b2b0/index_gallery/1780385820425-lz7avsfg88.jpg",
+                    "sortOrder": 3,
+                    "description": "거실",
+                    "isSelected": true,
+                    "blockId": null
+                  },
+                  {
+                    "id": "670d3db3-60b2-4d66-81d0-918da113721a",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/97bf4864-822e-4890-9299-41e72394b2b0/index_gallery/1780385820352-y1t1tnvhp5.jpg",
+                    "sortOrder": 4,
+                    "description": "독채",
+                    "isSelected": true,
+                    "blockId": null
+                  }
+                ],
+                "videos": [ ],
+                "description": " "
               },
               "signature": {
                 "title": "",
@@ -971,6 +1030,14 @@
                     "description": "",
                     "isSelected": true,
                     "blockId": null
+                  },
+                  {
+                    "id": "019023d6-8347-41b2-a45e-5c80a6851321",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/97bf4864-822e-4890-9299-41e72394b2b0/reservation_hero/1780386016149-4utqvqg0ax.jpeg",
+                    "sortOrder": 1,
+                    "description": "",
+                    "isSelected": true,
+                    "blockId": null
                   }
                 ]
               },
@@ -981,17 +1048,36 @@
               }
             }
           ]
+        },
+        "nearbyAttractions": {
+          "sections": [ ]
+        },
+        "layoutMap": {
+          "sections": [ ]
         }
+      },
+      "popup": {
+        "popups": [ ]
       },
       "theme": {
         "font": {
-          "koSub": null,
-          "enMain": null,
           "koMain": {
+            "cdn": null,
+            "key": "escoredream",
+            "woff2": "https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff",
+            "family": "Escoredream"
+          },
+          "koSub": {
             "cdn": "https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.min.css",
             "key": "pretendard",
             "woff2": null,
             "family": "Pretendard"
+          },
+          "enMain": {
+            "cdn": "https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap",
+            "key": "cormorant",
+            "woff2": null,
+            "family": "Cormorant"
           }
         },
         "color": {
@@ -999,10 +1085,8 @@
           "secondary": "#111827"
         }
       },
-      "popup": {
-        "popups": [ ]
-      },
       "property": {
+        "name": "강릉 스테이밋 풀빌라",
         "images": [
           {
             "id": "672f0421-9a97-4aa7-b43e-138d580cd3bc",
@@ -1113,7 +1197,6 @@
             "category": "property_exterior"
           }
         ],
-        "name": "강릉 스테이밋 풀빌라",
         "nameEn": "Gangneung Staymeet Pool Villa"
       },
       "roomtypes": [
@@ -1411,7 +1494,6 @@
           ]
         }
       ]
-    },
-    "id": "97bf4864-822e-4890-9299-41e72394b2b0"
+    }
   }
 }

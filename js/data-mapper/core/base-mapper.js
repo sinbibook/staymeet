@@ -15,11 +15,53 @@ class BaseDataMapper {
     // ============================================================================
 
     /**
-     * 데이터 설정
+     * JSON 데이터 로드
      */
-    setData(data) {
-        this.data = data;
-        this.isDataLoaded = !!data;
+    async loadData() {
+        try {
+            // 캐시 방지를 위한 타임스탬프 추가
+            const timestamp = new Date().getTime();
+            const response = await fetch(`./standard-template-data.json?t=${timestamp}`);
+            this.data = await response.json();
+            this.isDataLoaded = true;
+            return this.data;
+        } catch (error) {
+            console.error('Failed to load property data:', error);
+            this.isDataLoaded = false;
+            throw error;
+        }
+    }
+
+    /**
+     * 데이터 업데이트 (프리뷰용)
+     * @param {Object} newData - 새로운 데이터
+     */
+    updateData(newData) {
+        if (!newData || typeof newData !== 'object') {
+            console.error('❌ Invalid data');
+            return;
+        }
+
+        this.data = newData;
+        this.isDataLoaded = true;
+    }
+
+    /**
+     * 스네이크 케이스를 카멜 케이스로 변환
+     * API 데이터 변환용
+     */
+    convertToCamelCase(obj) {
+        if (Array.isArray(obj)) {
+            return obj.map(item => this.convertToCamelCase(item));
+        } else if (obj !== null && typeof obj === 'object') {
+            return Object.keys(obj).reduce((result, key) => {
+                // 스네이크 케이스를 카멜 케이스로 변환
+                const camelKey = key.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+                result[camelKey] = this.convertToCamelCase(obj[key]);
+                return result;
+            }, {});
+        }
+        return obj;
     }
 
     /**
@@ -65,6 +107,7 @@ class BaseDataMapper {
         try {
             return document.querySelector(selector);
         } catch (error) {
+            console.warn(`Invalid selector: ${selector}`);
             return null;
         }
     }
@@ -76,22 +119,8 @@ class BaseDataMapper {
         try {
             return document.querySelectorAll(selector);
         } catch (error) {
+            console.warn(`Invalid selector: ${selector}`);
             return [];
-        }
-    }
-
-    /**
-     * Favicon 업데이트 공통 메서드
-     */
-    updateFavicon() {
-        if (this.data && this.data.homepage && this.data.homepage.images && this.data.homepage.images[0] && this.data.homepage.images[0].logo) {
-            const selectedLogo = this.data.homepage.images[0].logo.find(logo => logo.isSelected === true);
-            if (selectedLogo && selectedLogo.url) {
-                const faviconElement = document.querySelector('[data-homepage-favicon]');
-                if (faviconElement) {
-                    faviconElement.href = selectedLogo.url;
-                }
-            }
         }
     }
 
@@ -127,48 +156,6 @@ class BaseDataMapper {
         return descriptions[code] || '';
     }
 
-    /**
-     * 선택된 이미지만 필터링하고 정렬하는 공통 헬퍼 메서드
-     * @param {Array} images - 이미지 배열
-     * @param {string} [category] - 필터링할 카테고리 (선택적)
-     * @returns {Array} 선택되고 정렬된 이미지 배열
-     * @private
-     */
-    _getSelectedAndSortedImages(images, category = null) {
-        if (!Array.isArray(images)) return [];
-        return images
-            .filter(img => img.isSelected && (category === null || img.category === category))
-            .sort((a, b) => (a.sortOrder || 0) - (b.sortOrder || 0));
-    }
-
-    /**
-     * HTML 특수 문자를 이스케이프 처리하는 헬퍼 메서드 (XSS 방지)
-     * @private
-     */
-    _escapeHTML(text) {
-        if (!text) return '';
-        const map = {
-            '&': '&amp;',
-            '<': '&lt;',
-            '>': '&gt;',
-            '"': '&quot;',
-            "'": '&#x27;',
-            '/': '&#x2F;'
-        };
-        return text.replace(/[&<>"'\/]/g, (char) => map[char]);
-    }
-
-    /**
-     * 텍스트의 줄바꿈을 HTML <br> 태그로 변환하는 헬퍼 메서드 (XSS 안전)
-     * @private
-     */
-    _formatTextWithLineBreaks(text) {
-        if (this._isEmptyValue(text)) return '';
-        const trimmedText = text.trim();
-        const escapedText = this._escapeHTML(trimmedText);
-        return escapedText.replace(/\n/g, '<br>');
-    }
-
     // ============================================================================
     // 🏠 CUSTOMFIELDS HELPERS (Property & Room)
     // ============================================================================
@@ -198,7 +185,12 @@ class BaseDataMapper {
      */
     getPropertyImages(imageCategory) {
         const customImages = this.safeGet(this.data, 'homepage.customFields.property.images') || [];
-        return this._getSelectedAndSortedImages(customImages, imageCategory);
+
+        // 카테고리와 isSelected로 필터링
+        const filteredImages = customImages.filter(img => img.category === imageCategory && img.isSelected);
+
+        // sortOrder로 정렬
+        return filteredImages.sort((a, b) => (a.sortOrder || 0) - (b.sortOrder || 0));
     }
 
     /**
@@ -240,7 +232,12 @@ class BaseDataMapper {
     getRoomImages(room, imageCategory) {
         const customFields = this.getRoomTypeCustomFields(room.id);
         const customImages = customFields?.images || [];
-        return this._getSelectedAndSortedImages(customImages, imageCategory);
+
+        // 카테고리와 isSelected로 필터링
+        const filteredImages = customImages.filter(img => img.category === imageCategory && img.isSelected);
+
+        // sortOrder로 정렬
+        return filteredImages.sort((a, b) => (a.sortOrder || 0) - (b.sortOrder || 0));
     }
 
     // ============================================================================
@@ -321,37 +318,16 @@ class BaseDataMapper {
     // ============================================================================
 
     /**
-     * 메타 태그 업데이트
+     * 메타 태그 업데이트 (homepage.seo + 페이지별 SEO 병합)
+     * @param {Object} pageSEO - 페이지별 SEO 데이터 (선택사항, 전역 SEO보다 우선 적용)
      */
-    updateMetaTags(property) {
-        if (!property) return;
-
-        // customFields 헬퍼를 통해 숙소명 가져오기
-        const builderPropertyName = this.getPropertyName();
-
-        // 타이틀 업데이트
-        const title = this.safeSelect('title');
-        if (title && property.subtitle) {
-            title.textContent = `${builderPropertyName} - ${property.subtitle}`;
-        }
-
-        // 메타 description 업데이트
-        const metaDescription = this.safeSelect('meta[name="description"]');
-        if (metaDescription && property.description) {
-            metaDescription.setAttribute('content', property.description);
-        }
-
-        // 메타 keywords 업데이트
-        const metaKeywords = this.safeSelect('meta[name="keywords"]');
-        if (metaKeywords && property.city && property.province) {
-            const keywords = [
-                property.city.name + '펜션',
-                property.province.name + '숙박',
-                builderPropertyName,
-                '감성펜션',
-                '자연휴양지'
-            ].join(', ');
-            metaKeywords.setAttribute('content', keywords);
+    updateMetaTags(pageSEO = null) {
+        // homepage.seo 글로벌 SEO 데이터 적용
+        const globalSEO = this.safeGet(this.data, 'homepage.seo') || {};
+        // 전역 SEO와 페이지별 SEO를 병합합니다. 페이지별 설정이 우선됩니다.
+        const finalSEO = { ...globalSEO, ...(pageSEO || {}) };
+        if (Object.keys(finalSEO).length > 0) {
+            this.updateSEOInfo(finalSEO);
         }
     }
 
@@ -390,12 +366,13 @@ class BaseDataMapper {
 
     /**
      * 페이지별 초기화 (서브클래스에서 오버라이드)
-     * 데이터는 생성자에서 전달받으므로 별도 로딩 불필요
      */
     async initialize() {
         try {
+            await this.loadData();
             await this.mapPage();
         } catch (error) {
+            console.error('Failed to initialize mapper:', error);
         }
     }
 

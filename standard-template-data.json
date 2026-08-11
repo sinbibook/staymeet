@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.57.0",
-    "generatedAt": "2026-08-11T08:32:16.603861775Z",
+    "version": "1.58.0",
+    "generatedAt": "2026-08-11T08:39:37.801453244Z",
     "templateType": "full_banner_slider_flat",
     "propertyId": "b7d25e75-be29-4dfb-898e-e58779afd4be",
     "homepageId": "97bf4864-822e-4890-9299-41e72394b2b0"
@@ -167,6 +167,72 @@
           {
             "id": "11690b49-4578-453d-9503-7196c51efc3a",
             "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/facility/7cc886e8-b9cd-4292-9ce0-f3fe2b7cac97/main/1786436670976-x55bmuobk2.jpg",
+            "sortOrder": 2,
+            "description": "",
+            "isSelected": true,
+            "blockId": null
+          }
+        ]
+      },
+      {
+        "id": "79299892-5589-44bb-af84-628727536c4b",
+        "name": "키즈시설",
+        "description": "여행 속에서도 신나는 놀이가 이어지는 곳,\n아이들의 웃음으로 특별한 하루를 채워보세요.",
+        "usageGuide": " ",
+        "displayOrder": 3,
+        "images": [
+          {
+            "id": "e8185e44-0030-4808-9dd3-c49a238eec98",
+            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/facility/79299892-5589-44bb-af84-628727536c4b/main/1786437507781-xp5db3qzb4.jpg",
+            "sortOrder": 0,
+            "description": "",
+            "isSelected": true,
+            "blockId": null
+          },
+          {
+            "id": "09570f73-3ba7-4d25-b824-e9d5a54bb900",
+            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/facility/79299892-5589-44bb-af84-628727536c4b/main/1786437507781-4ifxonfc7v.jpg",
+            "sortOrder": 1,
+            "description": "",
+            "isSelected": true,
+            "blockId": null
+          },
+          {
+            "id": "3eb310b5-9fb4-4bd0-a993-8323934f6213",
+            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/facility/79299892-5589-44bb-af84-628727536c4b/main/1786437507783-55gwm4a0az.jpg",
+            "sortOrder": 2,
+            "description": "",
+            "isSelected": true,
+            "blockId": null
+          }
+        ]
+      },
+      {
+        "id": "2de1802b-c861-4d41-918e-200c82f4d6d7",
+        "name": "편의 및 주변 시설",
+        "description": "머무는 모든 순간이 편안하게 이어질 수 있도록\n세심한 준비로 공간의 완성도를 더했습니다.\n부담 없이 쉬어갈 수 있는 시간을 제공합니다.",
+        "usageGuide": "[편의시설]\n- 전 객실 WiFi 구비\n- OTT 시청가능",
+        "displayOrder": 4,
+        "images": [
+          {
+            "id": "954c91ef-6bb0-43c6-bf6b-6c8e6c2c3c3f",
+            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/facility/2de1802b-c861-4d41-918e-200c82f4d6d7/main/1786437525504-vtood88xy0.jpg",
+            "sortOrder": 0,
+            "description": "",
+            "isSelected": true,
+            "blockId": null
+          },
+          {
+            "id": "ca622de6-a444-420e-a993-4aab8914a4ab",
+            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/facility/2de1802b-c861-4d41-918e-200c82f4d6d7/main/1786437525503-ko1xq9vmnq.jpg",
+            "sortOrder": 1,
+            "description": "",
+            "isSelected": true,
+            "blockId": null
+          },
+          {
+            "id": "cc8e9a0b-c911-4ae6-a42e-50676a89618d",
+            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/facility/2de1802b-c861-4d41-918e-200c82f4d6d7/main/1786437525506-gej3lbranc.jpg",
             "sortOrder": 2,
             "description": "",
             "isSelected": true,

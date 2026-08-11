@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.54.0",
-    "generatedAt": "2026-08-11T08:29:14.713600958Z",
+    "version": "1.55.0",
+    "generatedAt": "2026-08-11T08:30:51.300525159Z",
     "templateType": "full_banner_slider_flat",
     "propertyId": "b7d25e75-be29-4dfb-898e-e58779afd4be",
     "homepageId": "97bf4864-822e-4890-9299-41e72394b2b0"
@@ -1153,7 +1153,7 @@
                     "id": "5747b7b9-75de-4f10-9525-585609229d5f",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/97bf4864-822e-4890-9299-41e72394b2b0/index_signature/1786436172138-zx8xazh9e1.jpg",
                     "sortOrder": 2,
-                    "description": "나만의 시간을 지켜주는 힐링 스테",
+                    "description": "나만의 시간을 지켜주는 힐링 스테이",
                     "isSelected": true,
                     "blockId": null
                   }

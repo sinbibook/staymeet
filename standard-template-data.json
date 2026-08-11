@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.56.0",
-    "generatedAt": "2026-08-11T08:31:19.568858418Z",
+    "version": "1.57.0",
+    "generatedAt": "2026-08-11T08:32:16.603861775Z",
     "templateType": "full_banner_slider_flat",
     "propertyId": "b7d25e75-be29-4dfb-898e-e58779afd4be",
     "homepageId": "97bf4864-822e-4890-9299-41e72394b2b0"
@@ -1119,8 +1119,8 @@
                     "blockId": null
                   },
                   {
-                    "id": "d99c5502-ad61-41c3-b4dd-83c27b337020",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/97bf4864-822e-4890-9299-41e72394b2b0/index_gallery/1786436172161-sdf7vavkl1.jpg",
+                    "id": "0674cbc6-693e-470e-9080-e2a3d37a5672",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/97bf4864-822e-4890-9299-41e72394b2b0/index_gallery/1786437134248-cqz1crhgno.jpg",
                     "sortOrder": 4,
                     "description": "독채",
                     "isSelected": true,

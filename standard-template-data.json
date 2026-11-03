@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.72.0",
-    "generatedAt": "2026-11-03T05:24:22.960830223Z",
+    "version": "1.73.0",
+    "generatedAt": "2026-11-03T05:24:42.569577497Z",
     "templateType": "full_banner_slider_flat",
     "propertyId": "b7d25e75-be29-4dfb-898e-e58779afd4be",
     "homepageId": "97bf4864-822e-4890-9299-41e72394b2b0"
@@ -29,6 +29,9 @@
     "domain": "staymeet.kr",
     "realtimeBookingId": "https://map.naver.com/p/entry/place/1179611927",
     "ybsId": "79191",
+    "tripPropertyId": "10356",
+    "partnerType": "distributor_b",
+    "tripProviderName": "(주)신비서",
     "amenities": [
       "주차장",
       "흡연구역(지정장소)"
@@ -401,10 +404,7 @@
         "surrounding": [ ],
         "commonArea": [ ]
       }
-    ],
-    "tripPropertyId": "10356",
-    "partnerType": "distributor_b",
-    "tripProviderName": "(주)신비서"
+    ]
   },
   "rooms": [
     {
